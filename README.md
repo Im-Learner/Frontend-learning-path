@@ -25,13 +25,13 @@ This repository is a work in progress. I'll keep adding new projects, improving 
 
 ### HTML
 
-1. **[Single Page CV](./HTML/single-page-cv/)**  
+1. **[Single Page CV](./HTML/Single-Page-CV/)**  
    A simple CV webpage built as a roadmap.sh practice project.
 
-2. **[Basic HTML Website](./HTML/basic-html-website/)**  
+2. **[Basic HTML Website](./HTML/Basic-HTML-Website/)**  
    A multi-page website created to practice HTML structure and semantic elements.
 
-3. **[Comparison Table](./HTML/comparison-table/)**  
+3. **[Comparison Table](./HTML/Comparison-Table/)**  
    A comparison table practice project.
 
 ## Goals
