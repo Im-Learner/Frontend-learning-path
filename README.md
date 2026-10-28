@@ -23,6 +23,8 @@ This repository is a work in progress. I'll keep adding new projects, improving 
 
 ## Projects
 
+**[You can view live projects on GitHub Pages here.](https://im-learner.github.io/Frontend-learning-path/)**
+
 ### HTML
 
 1. **[Single Page CV](./HTML/Single-Page-CV/)**  
