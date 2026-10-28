@@ -32,7 +32,7 @@ This repository is a work in progress. I'll keep adding new projects, improving 
    A multi-page website created to practice HTML structure and semantic elements.
 
 3. **[Comparison Table](./HTML/comparison-table/)**  
-   A pricing comparison table practice project.
+   A comparison table practice project.
 
 ## Goals
 
