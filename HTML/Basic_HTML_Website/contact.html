@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact RA</title>
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <meta
+      name="description"
+      content="Contact page for RA portfolio website, providing a way to get in touch with the developer for inquiries, collaborations or feedback or just to say hi."
+    />
+    <meta
+      name="keywords"
+      content="Contact, Portfolio, Web Development, Software Engineering, Computer Engineering, Technology, Test Project, HTML"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="articles.html">Articles</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <!--This is a horizontal rule to separate each part from the next one -->
+    <main>
+      <section id="introduction">
+        <h1>Get in Touch</h1>
+        <p>
+          Thanks for taking the time to visit my portfolio and learn a little
+          about me and my work. I appreciate you taking a look around and I'd be
+          happy to hear from you.
+        </p>
+        <h2>About Me</h2>
+        <p>
+          I'm a young computer engineering graduate with experience working on
+          small web development and software projects, with a focus on creating
+          simple, practical solutions. I'm particularly interested in web
+          development and AI-powered applications.
+        </p>
+      </section>
+      <section id="contact-info">
+        <h2>Contact Information</h2>
+        <p>
+          Get in touch with me for any inquiries, collaborations or feedback or
+          just to say hi!
+          <br />
+          <a href="https://github.com/Im-Learner">GitHub</a><br />
+          <a href="https://www.linkedin.com/in/reza-ashrafi-na/">LinkedIn</a
+          ><br />
+          <a href="mailto:R.Ashrafi.NA@gmail.com">
+            You can contact me via email by clicking this text
+          </a>
+        </p>
+      </section>
+      <section id="contact">
+        <form
+          action="mailto:R.Ashrafi.NA@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <fieldset>
+            <legend>Contact Form</legend>
+            <label for="fname">First Name:</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="your beautiful name"
+              required
+            />
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required /><br /><br />
+            <label for="email">Email (to get in touch):</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@gmail.com"
+              required
+            /><br /><br />
+            <label for="message">Message:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              cols="50"
+              placeholder="Feel free to share your questions, ideas, feedback or collaboration opportunities. Have something else you'd like to discuss? Let me know, or just say hi (:"
+              required
+              autofocus
+            ></textarea
+            ><br /><br />
+            <input
+              type="hidden"
+              name="subject"
+              value="Contact Form Submission - GitHub Basic_HTML_Website"
+            />
+            <button type="submit">Send Message</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <hr />
+    <!-- This is a horizontal rule to separate each part from the next one -->
+    <footer>
+      <p><i>hey have you smiled today (:</i></p>
+      <p>&copy; 2026 RA. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
