@@ -1,4 +1,4 @@
-# Pricing Comparison Table
+# Comparison Table
 
 This project was created as part of my HTML learning journey and focuses on building a semantic and accessible comparison table using HTML.
 
