@@ -3,29 +3,558 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frontend Learning Path</title>
-</head>
-<body>
-  <h1>Frontend Learning Path</h1>
-  <p>My frontend development learning journey.</p>
 
-  <h2>HTML Projects</h2>
-  <ul>
-    <li>
-      <a href="./HTML/Single-Page-CV/">
-        Single Page CV
+  <meta
+    name="description"
+    content="Reza Ashrafi's frontend development learning journey, projects, and practice."
+  >
+
+  <title>Reza Ashrafi — Frontend Learning Path</title>
+
+  <style>
+    :root {
+      --bg: #eeeeee;
+      --surface: #f8f8f8;
+      --border: #d9d9d9;
+      --text: #222222;
+      --muted: #666666;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(100% - 40px, 1000px);
+      margin-inline: auto;
+    }
+
+    /* Header */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(217, 217, 217, 0.7);
+      background: rgba(238, 238, 238, 0.78);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .header-content {
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .logo {
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      white-space: nowrap;
+    }
+
+    .brand-divider {
+      color: #b0b0b0;
+      font-weight: 300;
+    }
+
+    .brand-title {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      color: var(--muted);
+      font-size: 0.95rem;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    /* Hero */
+
+    .hero {
+      padding: 100px 0 80px;
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+
+    .hero h1 {
+      max-width: 700px;
+      font-size: clamp(2.4rem, 6vw, 4.5rem);
+      line-height: 1.08;
+      letter-spacing: -2px;
+      margin-bottom: 24px;
+    }
+
+    .hero-description {
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .hero-description a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-color: rgba(37, 99, 235, 0.35);
+      text-underline-offset: 4px;
+      transition: color 0.2s ease;
+    }
+
+    .hero-description a:hover {
+      color: var(--accent-hover);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .hero-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 17px;
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      background: var(--accent);
+      color: #ffffff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    .hero-link:hover {
+      background: var(--accent-hover);
+      border-color: var(--accent-hover);
+      transform: translateY(-2px);
+    }
+
+    /* Projects */
+
+    .projects {
+      padding: 20px 0 100px;
+    }
+
+    .section-title {
+      margin-bottom: 30px;
+    }
+
+    .section-title h2 {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      min-height: 250px;
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      border-color: #bdbdbd;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    .project-number {
+      color: #888888;
+      font-size: 0.85rem;
+      margin-bottom: 18px;
+    }
+
+    .project-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+    }
+
+    .project-description {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 25px;
+    }
+
+    .project-links {
+      margin-top: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .project-links a {
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 2px;
+      transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .project-links a:hover {
+      color: var(--accent-hover);
+      border-color: var(--accent-hover);
+    }
+
+    /* Footer */
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 30px 0;
+      background: #e7e7e7;
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .footer-content p {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    .social-links a {
+      color: var(--muted);
+      font-size: 0.9rem;
+      transition: color 0.2s ease;
+    }
+
+    .social-links a:hover {
+      color: var(--accent);
+    }
+
+    /* Responsive */
+
+    @media (max-width: 800px) {
+      .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .hero {
+        padding: 70px 0 60px;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .header-content {
+        padding: 14px 0;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .brand {
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      nav {
+        gap: 16px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        width: min(100% - 28px, 1000px);
+      }
+
+      .hero h1 {
+        letter-spacing: -1px;
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container header-content">
+
+      <a href="#" class="brand" aria-label="Reza Ashrafi — Frontend Learning Path">
+        <span class="logo">Reza Ashrafi</span>
+        <span class="brand-divider" aria-hidden="true">/</span>
+        <span class="brand-title">Frontend Learning Path</span>
       </a>
-    </li>
-    <li>
-      <a href="./HTML/Basic_HTML_Website/">
-        Basic HTML Website
-      </a>
-    </li>
-    <li>
-      <a href="./HTML/Comparison-Table/">
-        Comparison Table
-      </a>
-    </li>
-  </ul>
+
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+
+        <a
+          href="https://github.com/Im-Learner"
+          target="_blank"
+          rel="noopener noreferrer"
+        >GitHub</a>
+
+        <a
+          href="https://www.linkedin.com/in/reza-ashrafi-na/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >LinkedIn</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+
+          <span class="eyebrow">Learning by building</span>
+
+          <h1>Learning frontend, one project at a time.</h1>
+
+          <p class="hero-description">
+            I'm learning frontend development through hands-on projects and
+            practice exercises, following the
+            <a
+              href="https://roadmap.sh/frontend"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Frontend Developer Roadmap ↗</a>.
+            This is where I document my progress and put what I learn into practice.
+          </p>
+
+          <div class="hero-actions">
+            <a
+              class="hero-link"
+              href="https://github.com/Im-Learner/Frontend-learning-path"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Explore the source code ↗</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Projects</h2>
+          <p>
+            A collection of projects built throughout my learning journey.
+          </p>
+        </div>
+
+        <div class="project-grid">
+
+          <!-- Project 01: Single Page CV -->
+          <article class="project-card">
+            <span class="project-number">PROJECT 01</span>
+
+            <h3>Single Page CV</h3>
+
+            <p class="project-description">
+              A simple CV webpage built as a roadmap.sh practice project.
+            </p>
+
+            <div class="project-links">
+              <a
+                href="https://im-learner.github.io/Frontend-learning-path/HTML/Single-Page-CV/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Live demo →</a>
+
+              <a
+                href="https://github.com/Im-Learner/Frontend-learning-path/tree/main/HTML/Single-Page-CV"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Source code →</a>
+            </div>
+          </article>
+
+          <!-- Project 02: Basic HTML Website -->
+          <article class="project-card">
+            <span class="project-number">PROJECT 02</span>
+
+            <h3>Basic HTML Website</h3>
+
+            <p class="project-description">
+              A multi-page website created to practice HTML structure
+              and semantic elements.
+            </p>
+
+            <div class="project-links">
+              <a
+                href="https://im-learner.github.io/Frontend-learning-path/HTML/Basic_HTML_Website/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Live demo →</a>
+
+              <a
+                href="https://github.com/Im-Learner/Frontend-learning-path/tree/main/HTML/Basic_HTML_Website"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Source code →</a>
+            </div>
+          </article>
+
+          <!-- Project 03: Comparison Table -->
+          <article class="project-card">
+            <span class="project-number">PROJECT 03</span>
+
+            <h3>Comparison Table</h3>
+
+            <p class="project-description">
+              A comparison table practice project built while learning
+              semantic HTML tables.
+            </p>
+
+            <div class="project-links">
+              <a
+                href="https://im-learner.github.io/Frontend-learning-path/HTML/Comparison-Table/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Live demo →</a>
+
+              <a
+                href="https://github.com/Im-Learner/Frontend-learning-path/tree/main/HTML/Comparison-Table"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Source code →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+
+      <p>
+        Learning by building, improving one project at a time.
+      </p>
+
+      <div class="social-links">
+        <a
+          href="https://github.com/Im-Learner"
+          target="_blank"
+          rel="noopener noreferrer"
+        >GitHub</a>
+
+        <a
+          href="https://www.linkedin.com/in/reza-ashrafi-na/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >LinkedIn</a>
+      </div>
+
+    </div>
+  </footer>
+
 </body>
 </html>
