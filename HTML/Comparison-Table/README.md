@@ -37,4 +37,4 @@ The main purpose of this project was to practice HTML structure, semantic elemen
 
 This project is part of my ongoing journey to learn and improve my web development skills.
 
-**[View project live]**(https://im-learner.github.io/Frontend-learning-path/HTML/Comparison-Table)
+[View project live](https://im-learner.github.io/Frontend-learning-path/HTML/Comparison-Table)
