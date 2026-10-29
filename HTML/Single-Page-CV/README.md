@@ -1,14 +1,16 @@
 # Single Page CV
 
 A single-page CV built with HTML as part of the roadmap.sh frontend projects.
+**Note:**
+  Most of the information in this CV is fictional and included for practice purposes.
 
 ## Live Demo
 
-[Project Page](https://im-learner.github.io/single-page-cv/)
+[Project Page](https://im-learner.github.io/Frontend-learning-path/HTML/Single-Page-CV/)
 
 ## Project URL
 
-https://roadmap.sh/projects/single-page-cv
+[Project URL in roadmap.sh](https://roadmap.sh/projects/single-page-cv)
 
 ## Features
 
@@ -21,6 +23,6 @@ https://roadmap.sh/projects/single-page-cv
 
 Reza Ashrafi
 
-GitHub: https://github.com/Im-Learner
+[LinkedIn](https://linkedin.com/in/reza-ashrafi-na)
 
-LinkedIn: https://linkedin.com/in/reza-ashrafi-na
+[GitHub](https://github.com/Im-Learner)
