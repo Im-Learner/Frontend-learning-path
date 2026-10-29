@@ -41,4 +41,4 @@ This project was created to practice the fundamentals of HTML and build a struct
 
 ## Live Demo
 
-[View Live Website](https://im-learner.github.io/Basic-HTML-Website/)
+[View Live Website](https://im-learner.github.io/Frontend-learning-path/HTML/Basic_HTML_Website/)
