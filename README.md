@@ -3,7 +3,7 @@
 
 I'm currently learning frontend development through hands-on projects and practice exercises, following the [roadmap.sh Frontend Developer Roadmap](https://roadmap.sh/frontend).
 
-This repository is a work in progress. I'll keep adding new projects, improving existing ones, and documenting my progress as I learn.
+This repository is a work in progress. I'll keep adding new projects, improving existing ones and documenting my progress as I learn.
 
 ## Learning Progress
 
@@ -46,4 +46,4 @@ This repository is a work in progress. I'll keep adding new projects, improving 
 
 ---
 
-**Status:** In progress — continuously learning, building, and improving.
+**Status:** In progress — continuously learning, building and improving.
