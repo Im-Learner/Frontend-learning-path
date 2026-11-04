@@ -11,7 +11,7 @@ A simple HTML contact form project built as part of the [Frontend Developer Road
 - HTML form validation
 
 ## Live demo
-[Check project live]()
+[Check project live](https://im-learner.github.io/Frontend-learning-path/HTML/Contact-Form/)
 
 ## Technologies
 - HTML5
