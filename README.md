@@ -36,7 +36,7 @@ This repository is a work in progress. I'll keep adding new projects, improving 
 3. **[Comparison Table](./HTML/Comparison-Table/)**  
    A comparison table practice project.
 
-4. **[Contact-Form](https://im-learner.github.io/Frontend-learning-path/HTML/Contact-Form)**
+4. **[Contact-Form](https://im-learner.github.io/Frontend-learning-path/HTML/Contact-Form)**  
    An accessible HTML contact form.
 
 ## Goals
