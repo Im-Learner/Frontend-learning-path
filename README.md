@@ -31,17 +31,21 @@ This repository is a work in progress. I'll keep adding new projects, improving 
    A simple CV webpage built as a roadmap.sh practice project.  
    [Roadmap.sh page](https://roadmap.sh/projects/single-page-cv)
 
-3. **[Basic HTML Website](./HTML/Basic-HTML-Website/)**  
-   A multi-page website created to practice HTML structure and semantic elements.  
+2. **[Basic HTML Website](./HTML/Basic-HTML-Website/)**  
+   A multi-page simple website.  
    [Roadmap.sh page](https://roadmap.sh/projects/basic-html-website)
 
-4. **[Comparison Table](./HTML/Comparison-Table/)**  
+3. **[Comparison Table](./HTML/Comparison-Table/)**  
    A comparison table practice project.  
    [Roadmap.sh page](https://roadmap.sh/projects/pricing-comparison-table)
 
-5. **[Contact-Form](https://im-learner.github.io/Frontend-learning-path/HTML/Contact-Form)**  
+4. **[Contact-Form](https://im-learner.github.io/Frontend-learning-path/HTML/Contact-Form)**  
    An accessible HTML contact form.  
    [Roadmap.sh page](https://roadmap.sh/projects/contact-form)
+
+5. **[Blog Post Page](https://im-learner.github.io/Frontend-learning-path/HTML/Blog-Post-Page/)**  
+   A multi-page post blog website.  
+   [Roadmap.sh page](https://roadmap.sh/projects/blog-post-page)
 
 ## Goals
 
