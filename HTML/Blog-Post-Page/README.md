@@ -36,7 +36,7 @@ Project page: [roadmap.sh – Blog Post Page](https://roadmap.sh/projects/blog-p
 - HTML validation
 
 ## Live demo  
-[Check project live].(https://im-learner.github.io/Frontend-learning-path/HTML/Blog-Post-Page/)
+[Check project live](https://im-learner.github.io/Frontend-learning-path/HTML/Blog-Post-Page/)
 
 ## Author
 
