@@ -45,7 +45,11 @@ This repository is a work in progress. I'll keep adding new projects, improving 
 
 5. **[Blog Post Page](https://im-learner.github.io/Frontend-learning-path/HTML/Blog-Post-Page/)**  
    A multi-page post blog website.  
-   [Roadmap.sh page](https://roadmap.sh/projects/blog-post-page)
+   [Roadmap.sh page](https://roadmap.sh/projects/blog-post-page)  
+
+6. **[Photo Showcase](https://im-learner.github.io/Frontend-learning-path/HTML/Photo-Showcase/)**  
+   An HTML photo showcase page with proper alt text, figures with captions and an embedded video.  
+   [Roadmap.sh page](https://roadmap.sh/projects/photo-showcase)
 
 ## Goals
 
